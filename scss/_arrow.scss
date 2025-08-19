@@ -1,0 +1,33 @@
+// arrow
+.arrow-toggle {
+    opacity: 0;
+}
+
+.arrow {
+    position: fixed;
+    top: 495px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: $color-arrow;
+    border: 2px solid $color-arrow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.5s ease-in-out;
+
+    img {
+        width: 40px;
+        height: 40px;
+        transform: rotate(-90deg);
+    }
+}
+
+#theme-toggle:checked ~ .body .arrow {
+    background-color: $color-green-neon;
+    border: 2px solid $color-green-neon;
+    transition: all 0.5s ease-in-out;
+}

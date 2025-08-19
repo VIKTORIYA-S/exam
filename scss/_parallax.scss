@@ -1,0 +1,25 @@
+// parallax
+.parallax-section {
+    background-image: url(../img/statistic-image.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    min-height: 100vh;
+    display: none;
+
+    @media screen and (max-width: 900px) {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .info__img {
+        display: none;
+    }
+    }
