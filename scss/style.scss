@@ -3,6 +3,7 @@
 @import 'main';
 @import 'footer';
 @import 'dark';
+@import 'video';
 
 * {
     margin: 0;
@@ -14,14 +15,16 @@ html,
 body {
     scroll-behavior: smooth;
     max-width: 100%;
+    height: 100%;
 }
 
 body {
     .body {
   background-color: white;
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  height: 100%;
   overflow-x: hidden;
-}
+    }
 }
 
 .hero,
@@ -146,6 +149,40 @@ a {
         padding-left: 15px;
     }
 }
+
+.main {
+    flex: 1 1 auto;
+}
+
+
+
+
+// parallax
+.parallax-section {
+    background-image: url(../img/statistic-image.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    min-height: 100vh;
+    display: none;
+
+    @media screen and (max-width: 900px) {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .info__img {
+        display: none;
+    }
+    }
+
 
 
 

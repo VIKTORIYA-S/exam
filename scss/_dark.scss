@@ -3,7 +3,7 @@
 }
 
 #theme-toggle:checked ~ .body {
-  background-color: $color-blue-deep;
+  background-color: rgba(22, 25, 38, 1);
   color: white;
 }
 
@@ -18,7 +18,7 @@
 }
 
 #theme-toggle:checked ~ .body .wrapper::after {
-  background-image: url('../img/gradient-for-first-screen-dark.png');
+  background-image: url('../img/gradient-for-dark-screen.png');
 }
 
 .theme-toggle-label {
@@ -174,16 +174,6 @@
     opacity: 60%;
 }
 
-// #theme-toggle:checked ~ .body .theme-toggle-icon-dark {
-//     display: block;
-// }
-
-// #theme-toggle:checked ~ .body .theme-toggle-icon-light {
-//     display: none;
-// }
-
-
-// /////////////////////////////////////////////////////
 .theme-toggle-icon-dark {
     display: none;
 }
@@ -194,4 +184,12 @@
 
 .theme-toggle:checked ~ .body .theme-toggle-icon-light {
     display: none;
+}
+
+#theme-toggle:checked ~ .body .header__list {
+  background-color: transparent;
+
+  @media screen and (max-width: 740px) {
+    background-color: rgba(10, 19, 37, 0.753);
+  }
 }
