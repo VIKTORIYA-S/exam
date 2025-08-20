@@ -530,17 +530,9 @@
         margin-bottom: 70px;
 
         @media screen and (max-width: 880px) {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
     }
-
-    // &__line {
-    //     width: 100px;
-    //     height: 3px;
-    //     border: none;
-    //     border-bottom: 1px solid $color-green;
-    //     margin: 40px auto;
-    // }
 
     &__description {
         max-width: 380px;
@@ -575,16 +567,24 @@
         border: 3px solid $color-gray-dark;
         margin: 0 auto;
 
-        @media screen and (max-width: 360px) {
-            width: 270px;
-            padding: 33px 60px;
+        @media screen and (max-width: 800px) {
+            width: 200px;
+            height: 55px;
+            padding: 13px 35px;
+        }
+
+        @media screen and (max-width: 400px) {
+            width: 160px;
+            height: 50px;
+            padding: 13px 21px;
+}
         }
     }
 
     &__button {
         background: transparent;
     }
-}
+
 
 
 // review
@@ -665,6 +665,7 @@
         @media screen and (max-width: 1020px) {
             flex-wrap: wrap;
             justify-content: center;
+            gap: 30px;
         }
 
         @media screen and (max-width: 425px) {
@@ -866,6 +867,10 @@
         font-size: 16px;
         line-height: 26px;
         padding-bottom: 12px;
+    }
+
+    &__input:focus {
+        outline: none;
     }
 
     &__input {

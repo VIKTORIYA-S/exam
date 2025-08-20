@@ -726,7 +726,7 @@
 }
 @media screen and (max-width: 880px) {
   .promise__text--1 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
 .promise__description {
@@ -760,6 +760,13 @@
   padding: 33px 89px;
   border: 3px solid #E4E4E4;
   margin: 0 auto;
+}
+@media screen and (max-width: 800px) {
+  .promise__button-wrapper {
+    width: 200px;
+    height: 55px;
+    padding: 13px 35px;
+  }
 }
 @media screen and (max-width: 360px) {
   .promise__button-wrapper {
@@ -850,6 +857,7 @@
   .review__cards {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -1049,6 +1057,9 @@
   font-size: 16px;
   line-height: 26px;
   padding-bottom: 12px;
+}
+.contact__input:focus {
+  outline: none;
 }
 .contact__input {
   margin-bottom: 40px;
