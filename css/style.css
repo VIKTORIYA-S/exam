@@ -1457,7 +1457,7 @@ iframe {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  min-height: 100vh;
+  min-height: 50vh;
   display: none;
 }
 @media screen and (max-width: 900px) {
