@@ -242,3 +242,19 @@
         transition: all 0.5s ease-in-out;
     }
 }
+
+.swaying {
+  animation: swaying 3s infinite;
+}
+
+@keyframes swaying {
+  0%   {
+    transform: rotate(0deg);
+}
+  50%  {
+    transform: rotate(10deg);
+}
+  100% {
+    transform: rotate(-10deg);
+}
+}

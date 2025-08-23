@@ -26,7 +26,7 @@
                     <div class="container header__container">
                         <a class="header__logo">
                             <img src="img/logo.svg" alt="logo">
-                            <img src="img/Solis.svg" alt="logo-text">
+                            <img class="swaying" src="img/Solis.svg" alt="logo-text">
                         </a>
                         <nav class="header__nav">
                             <input class="header__toggle" type="checkbox" id="header-toggle">
@@ -72,22 +72,19 @@
                         </div>
                     </section>
                     <div class="parallax-section"></div>
+
                     <section class="info" id="info">
                         <div class="container info__container">
                             <img class="info__img" src="img/statistic-image.png" alt="">
                             <div class="info__content">
                                 <div class="info__list">
-                                    <h3 class="info__number"><span class="info__span">S</span>1 tril</h3>
-                                    <p class="info__text">Market cap potential</p>
-                                    <div class="info__line info__line--1"></div>
-                                    <h3 class="info__number"><span class="info__span">S</span>3.65 mil</h3>
-                                    <p class="info__text">Deposited to platform</p>
-                                    <div class="info__line info__line--2"></div>
-                                    <h3 class="info__number">12</h3>
-                                    <p class="info__text">Stablecoins</p>
-                                </div>
-                                <div class="info__wrapper">
-                                    <p class="info__description">Solis group is a new venture created with investments
+                                    <div class="info__content_wrapper">
+                                        <h3 class="info__number"><span class="info__span">S</span>1 tril</h3>
+                                        <p class="info__text">Market cap potential</p>
+                                        <div class="info__line info__line--1"></div>
+                                    </div>
+                                    <p class="info__description  info__description--1">Solis group is a new venture
+                                        created with investments
                                         from and
                                         collaboration with
                                         XBTO International, XBTO Ventures and Phil Potter, formerly of bitfinex.
@@ -97,13 +94,27 @@
                                         phase of the
                                         market’s
                                         development. </p>
-                                    <p class="info__description info__description--1">The API-enabled, centralized
+                                </div>
+                                <div class="info__list">
+                                    <div class="info__content_wrapper">
+                                        <h3 class="info__number"><span class="info__span">S</span>3.65 mil</h3>
+                                        <p class="info__text">Deposited to platform</p>
+                                        <div class="info__line info__line--2"></div>
+                                    </div>
+                                    <p class="info__description info__description--2">The API-enabled, centralized
                                         platform
                                         addresses the key issues of inconsistent
                                         liquidity, stability and accessibility which are currently preventing the
                                         stablecoin market
                                         from reaching
-                                        critical mass. </p>
+                                        critical mass.
+                                    </p>
+                                </div>
+                                <div class="info__list info__list--3">
+                                    <div class="info__content_wrapper">
+                                        <h3 class="info__number">12</h3>
+                                        <p class="info__text">Stablecoins</p>
+                                    </div>
                                     <button class="btn info__button">Contact sales</button>
                                 </div>
                             </div>
@@ -282,14 +293,10 @@
                 <footer class="footer">
                     <div class="container footer__container">
                         <p class="footer__text footer__text--light">&copy; 2020 Solisgroup. All Rights Reserved.</p>
-                        <div class="footer__wrapper--center">
-                            <p class="footer__text footer__text--light">made by</p>
-                            <p class="footer__text footer__text--bold">Zgraya.digital</p>
-                        </div>
-                        <div class="footer__wrapper">
-                            <p class="footer__text footer__text--bold">User Agreement</p>
-                            <p class="footer__text footer__text--bold">Privacy Policy</p>
-                        </div>
+                        <p class="footer__text footer__text--light">made by <span
+                                class="footer__text footer__text--bold">Zgraya.digital</span></p>
+                        <p class="footer__text footer__text--bold">User Agreement <span
+                                class="footer__text footer__text--bold">Privacy Policy</span></p>
                     </div>
                 </footer>
             </div>

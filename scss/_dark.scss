@@ -193,3 +193,9 @@
     background-color: rgba(10, 19, 37, 0.753);
   }
 }
+
+#theme-toggle:checked ~ .body .arrow {
+    background-color: $color-green-neon;
+    border: 2px solid $color-green-neon;
+    transition: all 0.5s ease-in-out;
+}

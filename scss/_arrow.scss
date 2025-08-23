@@ -16,14 +16,14 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 100;
     transition: all 0.5s ease-in-out;
 
     img {
         width: 40px;
         height: 40px;
         transform: rotate(-90deg);
-    }
+}
 }
 
 #theme-toggle:checked ~ .body .arrow {
@@ -31,3 +31,40 @@
     border: 2px solid $color-green-neon;
     transition: all 0.5s ease-in-out;
 }
+
+ .arrow::after,
+    .arrow::before {
+        content: "";
+        border: 2px solid $color-arrow;
+        position: absolute;
+        left: -15px;
+        top: -15px;
+        right: -15px;
+        bottom: -15px;
+        border-radius: 50%;
+        opacity: 0;
+        animation: animate 3s linear infinite;
+    }
+
+    .arrow::after {
+        animation-delay: 1.5s;
+    }
+
+    @keyframes animate {
+        0% {
+            transform: scale(0.5);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1.2);
+            opacity: 0;
+        }
+    }
+
+    #theme-toggle:checked ~ .body .arrow::after,
+    #theme-toggle:checked ~ .body .arrow::before {
+        border: 2px solid $color-green-neon;
+    }
