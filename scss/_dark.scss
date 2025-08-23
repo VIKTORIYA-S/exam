@@ -2,8 +2,13 @@
     display: none;
 }
 
+// #theme-toggle:checked ~ .body {
+//   background-color: $color-background-dark;
+//   color: white;
+// }
+
 #theme-toggle:checked ~ .body {
-  background-color: rgba(22, 25, 38, 1);
+  background-color: $color-section-bg;
   color: white;
 }
 
@@ -14,7 +19,7 @@
 }
 
 #theme-toggle:checked ~ .body .wrapper {
-  background-image: url('../img/first-screen-dark.png');
+  background-image: url('../img/first-screen-dark.webp');
 }
 
 #theme-toggle:checked ~ .body .wrapper::after {
@@ -38,18 +43,18 @@
 #theme-toggle:checked ~ .body .header__line::after {
     background: $color-white;
 }
-
-#theme-toggle:checked ~ .body .header__link,
-#theme-toggle:checked ~ .body .hero__title,
-#theme-toggle:checked ~ .body .info__number,
-#theme-toggle:checked ~ .body .info__span,
-#theme-toggle:checked ~ .body .benefits__title,
-#theme-toggle:checked ~ .body .promise__description,
-#theme-toggle:checked ~ .body .promise__title,
-#theme-toggle:checked ~ .body .review__title,
-#theme-toggle:checked ~ .body .contact__title,
+#theme-toggle:checked ~ .body .color-white,
+// #theme-toggle:checked ~ .body .header__link,
+// #theme-toggle:checked ~ .body .hero__title,
+// #theme-toggle:checked ~ .body .info__number,
+// #theme-toggle:checked ~ .body .info__span,
+// #theme-toggle:checked ~ .body .benefits__title,
+// #theme-toggle:checked ~ .body .promise__description,
+// #theme-toggle:checked ~ .body .promise__title,
+// #theme-toggle:checked ~ .body .review__title,
+// #theme-toggle:checked ~ .body .contact__title,
 #theme-toggle:checked ~ .body .contact__input::placeholder,
-#theme-toggle:checked ~ .body .video__title,
+// #theme-toggle:checked ~ .body .video__title,
 #theme-toggle:checked ~ .body .footer__text {
     color: $color-white;
 }
@@ -198,4 +203,10 @@
     background-color: $color-green-neon;
     border: 2px solid $color-green-neon;
     transition: all 0.5s ease-in-out;
+}
+
+#theme-toggle:checked ~ .body input {
+    color: #ffffffe0;
+    font-style: italic;
+    font-family: $font-playfair;
 }

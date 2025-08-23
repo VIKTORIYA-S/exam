@@ -1187,7 +1187,7 @@
 }
 
 #theme-toggle:checked ~ .body {
-  background-color: rgb(22, 25, 38);
+  background-color: #161926;
   color: white;
 }
 
@@ -1198,7 +1198,7 @@
 }
 
 #theme-toggle:checked ~ .body .wrapper {
-  background-image: url("../img/first-screen-dark.png");
+  background-image: url("../img/first-screen-dark.webp");
 }
 
 #theme-toggle:checked ~ .body .wrapper::after {
@@ -1221,17 +1221,8 @@
   background: #fff;
 }
 
-#theme-toggle:checked ~ .body .header__link,
-#theme-toggle:checked ~ .body .hero__title,
-#theme-toggle:checked ~ .body .info__number,
-#theme-toggle:checked ~ .body .info__span,
-#theme-toggle:checked ~ .body .benefits__title,
-#theme-toggle:checked ~ .body .promise__description,
-#theme-toggle:checked ~ .body .promise__title,
-#theme-toggle:checked ~ .body .review__title,
-#theme-toggle:checked ~ .body .contact__title,
+#theme-toggle:checked ~ .body .color-white,
 #theme-toggle:checked ~ .body .contact__input::placeholder,
-#theme-toggle:checked ~ .body .video__title,
 #theme-toggle:checked ~ .body .footer__text {
   color: #fff;
 }
@@ -1377,6 +1368,12 @@
   background-color: #53F3CD;
   border: 2px solid #53F3CD;
   transition: all 0.5s ease-in-out;
+}
+
+#theme-toggle:checked ~ .body input {
+  color: rgba(255, 255, 255, 0.8784313725);
+  font-style: italic;
+  font-family: "Playfair Display", sans-serif;
 }
 
 .video {
@@ -1575,9 +1572,8 @@ iframe {
   transition: all 0.5s ease-in-out;
 }
 .arrow img {
-  width: 40px;
-  height: 40px;
-  transform: rotate(-90deg);
+  width: 25px;
+  height: 25px;
 }
 
 #theme-toggle:checked ~ .body .arrow {
@@ -1635,7 +1631,7 @@ body {
   height: 100%;
 }
 
-body .body {
+.body {
   background-color: white;
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
   height: 100%;
@@ -1643,18 +1639,6 @@ body .body {
 }
 
 @media screen and (max-width: 1200px) {
-  .hero,
-  .info,
-  .review,
-  .promise,
-  .video,
-  .quote,
-  .benefits,
-  .contact {
-    margin-bottom: 100px;
-  }
-}
-@media screen and (max-width: 800px) {
   .hero,
   .info,
   .review,
@@ -1760,11 +1744,11 @@ a {
   flex-direction: column;
   min-height: 100%;
   position: relative;
-  background-image: url("../img/first-screen-image.png");
+  background-image: url("../img/first-screen-image.webp");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: top center;
-  height: 100%;
+  height: 100vh;
   margin: 0;
   transition: background-image 0.5s ease-in-out;
 }
